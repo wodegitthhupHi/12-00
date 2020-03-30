@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="../js/vue.js">
+
+	</script>
+
+</head>
+<body>
+<div id="app"> <h1>{{a |abc}}</h1> 
+ <input type="text" v-focus placeholder="我有v-focus,所以,我获取了焦点">
+</div>
+<!-- |abc('我是第一个','我是第二个') -->
+<script>
+    Vue.directive('focus',{
+    inserted(el) {
+      console.log(el)
+      el.focus()
+    }
+})
+	var v=new Vue({
+		el:"#app",
+		data:{
+           a:"123132123 "
+         },
+   filters: {
+         abc(value, arg1, arg2) {
+         var obj="$"+value
+         return obj
+       // 想显示就必须return出去
+    }
+}
+
+       
+	})
+
+
+
+
+</script>
+	
+
+</body>
+</html>

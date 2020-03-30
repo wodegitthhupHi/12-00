@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	 
+
+  	 <script>
+    // var arr=[1,2,3,2,3,4,5];
+    // var set =new Set(arr);
+    // Array.from(set);
+    // console.log( Array.from(set))
+ 
+    
+    // var wode=[1,2,[3,4,5]] 
+    // console.log(Array.from(new set(wode.flat(Infinity))))
+    //  function f1(arr){
+    //  	//var res=[];
+    //  	arr.map(item=>{
+    //  		if(Array.isArray(item)){
+    //  			res=res.concat(f1(item))
+    //  		}else{
+    //  			res. 定义函数名 f1
+    //  	        push(item)
+    //  		}
+    //  	})
+
+    //  	return res
+    //  }
+
+    //  console.log(f1(arr))
+    
+
+    // console.log(arr.flat(Infinity))
+
+
+
+
+
+     // function SuperType(){
+     // 	this.name="Yvette";
+     // 	this.colors=['pink','blue','green']
+     // }
+
+
+     // SuperType.protottype.getName=function(){
+     // 	return this.name
+     // }
+
+     // function SubType(){
+     // 	this.age=22；
+     // }
+
+     // SubType.prototype = new SuperType();
+
+     // SubType.prototype.getAge = function(){
+     // 	return this.age
+     // }
+
+     // SubType.prototype.constructor = SubType;
+     // let instance1 = new SubType();
+     // instance1.colors.push('yesusfgsuaf');
+     // console.log(instance1.getName())
+     // console.log(instance1.colors)
+
+     // let instance2 = new SubType();
+
+     // console.log(instance2.colors)
+     
+
+     //    return this.colors=['abc','bie','h
+     // function SuerType(name){
+     // 	       this.name=name;duaih']
+     // }
+
+     // function SubType(name){
+     // 	SuperType.call(this.name);
+     // }
+
+     // let instance1 = new SubType('Yvette')
+
+
+     // instance1.colors.push('yelliw');
+
+     // console.log(instance1.colors)
+     // let instance2 = new SubType('Jack')
+     // console.log(instance2.colors)
+
+     // console.log(SuerType('wode'))
+
+
+
+
+     
+
+
+     // function hanshu(arr){
+     // 	var res = [];
+     // 	arr.map(item=>{
+     // 		if(Array.isArray(item)){
+     //           res = res.concat(hanshu(item));
+     // 		} else {
+     // 			res.push(item)
+     // 		}
+     // 	})
+     // 	return res;
+     // }
+     // console.log(hanshu(arr))
+
+
+
+    // function wode(arr){
+    // 	var res = []
+
+    // 	arr.map(item=>{
+    // 		if(Array.isArray(item)){
+    // 			res=res.concat(wode(item))
+    // 		} else {
+    // 			res.push (item);
+    // 		}
+    // 	})
+    // 	return res
+
+    // }
+
+    // console.log(wode(arr))
+   
+
+
+
+
+    // var array=[]
+    //   array=arr.flat(Infinity)
+      
+    //   array=Array.from(new Set(array))
+
+    // var abc=  array.sort((a,b)=>{
+    //   	return a-b
+    //   })
+     
+    //   console.log(abc)
+
+
+
+
+     function SuperType() {
+	    this.name = 'Yvette';
+	    this.colors = ['pink', 'blue', 'green'];
+	}
+	// 原型
+
+
+	SuperType.prototype.getName = function () {
+	    return this.name;
+	}
+
+
+
+
+	function SubType() {
+	    this.age = 22;
+	}
+
+	
+	SubType.prototype = new SuperType();
+
+
+	SubType.prototype.getAge = function() {
+	    return this.age;
+	}
+	SubType.prototype.constructor = SubType;
+	let instance1 = new SubType();
+	instance1.colors.push('yellow');
+	console.log(instance1.getName()); //Yvette
+	console.log(instance1.colors);//['pink', 'blue', 'green','yellow']
+
+	let instance2 = new SubType();
+	console.log(instance2.colors);//['pink', 'blue', 'green','yellow']
+    
+
+
+
+   function wdoe (){this.name="123123"}
+ 
+   wode.prototype.getname=function(){return this.name}
+   
+   function wode1(){this.age}
+
+   wode1.prototype = new wdoe()
+     
+ 
+ 
+
+
+
+	 </script>
+</body>
+</html>
